@@ -5,13 +5,17 @@ export default defineNuxtConfig({
   alias: {
     assets: "/<rootDir>/assets"
   },
+
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/main.scss'],
+  modules: [
+    '@nuxt/content'
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
-  },
+  }
 })
