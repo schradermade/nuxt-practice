@@ -1,3 +1,8 @@
+<script setup>
+  const { $sayHello } = useNuxtApp()
+  $sayHello("Nathan Schrader")
+</script>
+
 <template>
   <div class="Main">
     <h1>Hello Nuxt 3</h1>
